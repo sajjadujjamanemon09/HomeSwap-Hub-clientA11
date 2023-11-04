@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
         <div className="flex gap-3 items-center">
           <img src="https://i.ibb.co/dbpMn9L/maintenance.png" alt="" />
-        <a className="btn btn-ghost normal-case text-3xl font-bold">HomeCraft Hub</a>
+        <a className="btn btn-ghost normal-case text-3xl font-bold">HomeSwap Hub</a>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">

@@ -50,8 +50,8 @@ const Navbar = () => {
            {navLinks}
           </ul>
         </div>
-        <div className="flex gap-3 items-center">
-          <img src="https://i.ibb.co/dbpMn9L/maintenance.png" alt="" />
+        <div className="flex items-center">
+          <img className="w-20" src="https://i.ibb.co/dbpMn9L/maintenance.png" alt="" />
         <a className="btn btn-ghost normal-case text-3xl font-bold">HomeSwap Hub</a>
         </div>
       </div>

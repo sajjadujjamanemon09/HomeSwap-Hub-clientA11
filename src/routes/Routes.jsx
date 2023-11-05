@@ -5,6 +5,8 @@ import SignUp from "../page/SignUp/SignUp";
 import ErrorPage from "../page/ErrorPage/ErrorPage";
 import Home from "../page/Home/Home";
 import AddProducts from "../components/layout/AddProducts/AddProducts";
+import UpdateServices from "../components/layout/UpdateServices/UpdateServices";
+import AllServices from "../page/AllServices/AllServices";
 
 const routes = createBrowserRouter([
   {
@@ -15,7 +17,7 @@ const routes = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-        loader: () => fetch('http://localhost:5000/api/v1/user/addProducts')
+        loader: () => fetch('http://localhost:5000/services')
       },
       {
         path: 'signIn',
@@ -28,6 +30,16 @@ const routes = createBrowserRouter([
       {
         path: 'addProducts',
         element: <AddProducts />,
+      },
+      {
+        path: 'allServices',
+        element: <AllServices />,
+        loader: () => fetch('http://localhost:5000/services')
+      },
+      {
+        path: 'updateService/:id',
+        element: <UpdateServices/>,
+        loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
       },
     ]
   },

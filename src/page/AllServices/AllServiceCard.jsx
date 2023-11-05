@@ -2,9 +2,8 @@ import { FaForward } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 
-
-const Product = ({product}) => {
-    const { userName, serviceName, price, description, image } = product;
+const AllServiceCard = ({product}) => {
+    const { userName, serviceName, price, description, image, area } = product;
     return (
         <div className="card shadow-2xl">
             <div className="p-8 flex gap-5 items-center">
@@ -31,6 +30,7 @@ const Product = ({product}) => {
         }
         </p>
         <p> <span className="text-xl text-black font-medium py-4">Price:</span> <span className="text-red-500 text-xl font-bold">{price}</span></p>
+        <p>{area}</p>
         
           <div className="card-actions">
            <Link> <button className="btn btn-neutral text-white">View Detail <FaForward></FaForward> </button></Link>
@@ -40,4 +40,4 @@ const Product = ({product}) => {
     );
 };
 
-export default Product;
+export default AllServiceCard;

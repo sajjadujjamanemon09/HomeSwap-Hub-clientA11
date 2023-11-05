@@ -7,20 +7,20 @@ const AddProducts = () => {
 
         const form = event.target;
 
-        const name = form.name.value;
-        const brand = form.brand.value;
+        const userName = form.userName.value;
+        const serviceName = form.serviceName.value;
         const email = form.email.value;
         const price = form.price.value;
         const description = form.description.value;
         const image = form.image.value;
         const area = form.area.value;
 
-        const newProduct = { name, brand, email, price, description, image, area }
+        const newProduct = { userName, serviceName, email, price, description, image, area }
 
         console.log(newProduct); 
 
         // send data to the server
-        fetch('http://localhost:5000/api/v1/user/addProducts', {
+        fetch('http://localhost:5000/services', {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'
@@ -48,15 +48,15 @@ const AddProducts = () => {
             <div className="md:flex mb-8">
                 <div className="form-control md:w-1/2">
                     <label className="label">
-                        <span className="label-text">Name</span>
+                        <span className="label-text">User Name</span>
                     </label>
                     <label className="input-group">
-                        <input type="text" name="name" placeholder="Name" className="input input-bordered w-full" />
+                        <input type="text" name="userName" placeholder="User Name" className="input input-bordered w-full" />
                     </label>
                 </div>
                 <div className="form-control md:w-1/2 md:ml-4">
                 <label className="label">
-                        <span className="label-text">Email</span>
+                        <span className="label-text">User Email</span>
                     </label>
                     <label className="input-group">
                         <input type="email" name="email" placeholder="Email" className="input input-bordered w-full" />
@@ -70,7 +70,7 @@ const AddProducts = () => {
                         <span className="label-text">Service Name</span>
                     </label>
                     <label className="input-group">
-                        <input type="text" name="brand" placeholder="Service Name" className="input input-bordered w-full" />
+                        <input type="text" name="serviceName" placeholder="Service Name" className="input input-bordered w-full" />
                     </label>
                     
                 </div>

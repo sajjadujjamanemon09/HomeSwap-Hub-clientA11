@@ -5,6 +5,8 @@ import ServicesCard from "../../components/layout/ServicesCard/ServicesCard";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ProductShowCase from "../../components/layout/ProductShowCase/ProductShowCase";
+import Review from "../../components/layout/Review/Review";
+import FAQ from "../../components/layout/FAQ/FAQ";
 
 const Home = () => {
   const products = useLoaderData();
@@ -38,6 +40,8 @@ const Home = () => {
       </div>
 
 	  <ProductShowCase></ProductShowCase>
+	  <FAQ></FAQ>
+	  <Review></Review>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Product = ({product}) => {
     const { userName, serviceName, price, description, image } = product;
     return (
-        <div className="card w-[50vh] mx-auto justify-center shadow-2xl">
+        <div className="card mx-auto justify-center shadow-2xl">
             <div className="p-8 flex gap-5 items-center">
             <div className="avatar">
   <div className="w-12 rounded-full ring ring-neutral-600 ring-offset-base-100 ring-offset-2">

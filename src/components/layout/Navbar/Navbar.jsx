@@ -18,8 +18,8 @@ const Navbar = () => {
     <>
       <li><NavLink to='/'>Home</NavLink></li>
       <li><NavLink to='/allServices'>All Services</NavLink></li>
-      <li><NavLink to='/mySchedule'>My Schedule</NavLink></li>
-      <li><NavLink to='/addProducts'>Add Service</NavLink></li>
+      
+     
     </>
   );
 
@@ -47,7 +47,17 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-           {navLinks}
+            {navLinks}
+      <li tabIndex={0}>
+        <details>
+          <summary>DashBoard</summary>
+          <ul className="p-2">
+          <li><NavLink to='/addProducts'>Add Service</NavLink></li>
+          <li><NavLink to='/mySchedule'>My Schedule</NavLink></li>
+          <li><NavLink to='/addProducts'>My Services</NavLink></li>
+          </ul>
+        </details>
+      </li>
           </ul>
         </div>
         <div className="flex items-center">
@@ -57,7 +67,18 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          {navLinks}
+        {navLinks}
+      <li tabIndex={0}>
+        <details>
+          <summary>DashBoard</summary>
+          <ul className="p-2">
+          <li><NavLink to='/addProducts'>Add Service</NavLink></li>
+          <li><NavLink to='/mySchedule'>My Schedule</NavLink></li>
+          <li><NavLink to='/addProducts'>My Services</NavLink></li>
+          </ul>
+        </details>
+      </li>
+       
         </ul>
       </div>
       <div className="navbar-end">

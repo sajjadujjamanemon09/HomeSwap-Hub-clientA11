@@ -7,6 +7,7 @@ import Home from "../page/Home/Home";
 import AddProducts from "../components/layout/AddProducts/AddProducts";
 import UpdateServices from "../components/layout/UpdateServices/UpdateServices";
 import AllServices from "../page/AllServices/AllServices";
+import SingleServices from "../page/SingleServices/SingleServices";
 
 const routes = createBrowserRouter([
   {
@@ -39,6 +40,11 @@ const routes = createBrowserRouter([
       {
         path: 'updateService/:id',
         element: <UpdateServices/>,
+        loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+      },
+      {
+        path: 'singleService/:id',
+        element: <SingleServices/>,
         loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
       },
     ]

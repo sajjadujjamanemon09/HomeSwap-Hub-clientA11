@@ -1,5 +1,4 @@
 import { useLoaderData } from "react-router-dom";
-import Banner from "../../components/layout/Banner/Banner";
 import { useState, useEffect } from "react";
 import AllServiceCard from "./AllServiceCard";
 
@@ -21,11 +20,10 @@ const Home = () => {
 
   return (
     <div>
-      <Banner></Banner>
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-extrabold pt-20 pb-5">Our Services</h2>
+          <h2 className="text-3xl font-extrabold pt-10 pb-5">Our Services</h2>
           <p>
             <span className="text-red-500 py-6">
               HomeSwap Hub
@@ -33,7 +31,7 @@ const Home = () => {
             for individuals to find like-minded individuals interested in temporary home exchanges, whether for vacations or other purposes. Users can create detailed listings of their homes, specify their preferences, and connect with potential swap partners, allowing for convenient and cost-effective travel experiences while enjoying the comforts of a real home away from home.
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-10 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-20">
           {isShow
             ? products.map((product) => (
                 <AllServiceCard key={product._id} product={product} />

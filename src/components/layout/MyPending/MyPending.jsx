@@ -2,7 +2,7 @@ import { useTypewriter } from 'react-simple-typewriter';
 
 const MyPending = () => {
     const [text] = useTypewriter({
-        words: ['My Pending Works'],
+        words: ['My Pending Work'],
         loop: 0
     });
 

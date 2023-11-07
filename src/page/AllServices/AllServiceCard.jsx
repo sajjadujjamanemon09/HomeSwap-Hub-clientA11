@@ -34,6 +34,7 @@ const AllServiceCard = ({product}) => {
         </div>
         <div className="card-actions items-end justify-end">
         <Link to={`/singleService/${_id}`}> <button className="btn btn-neutral text-white">View Detail <FaForward></FaForward> </button></Link>
+        <Link to={`/updateService/${_id}`}> <button className="btn btn-neutral text-white"> Update <FaForward></FaForward> </button></Link>
         </div>
       </div>
     </div>

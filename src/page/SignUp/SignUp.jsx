@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import swal from 'sweetalert';
@@ -7,6 +7,10 @@ import Container from "../../components/ui/Container";
 
 
 const SignUp = () => {
+
+  useEffect(() => {
+    document.title = 'HomeSwap | SignUp'
+  },[])
 
   const {createUser, logOut} = useContext(AuthContext)
 

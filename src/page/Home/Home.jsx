@@ -2,7 +2,7 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../../components/layout/Banner/Banner";
 import ServicesCard from "../../components/layout/ServicesCard/ServicesCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ProductShowCase from "../../components/layout/ProductShowCase/ProductShowCase";
 import Review from "../../components/layout/Review/Review";
@@ -11,6 +11,10 @@ import FAQ from "../../components/layout/FAQ/FAQ";
 const Home = () => {
   const products = useLoaderData();
   const [isShow, setIsShow] = useState(false);
+
+  useEffect(() => {
+    document.title = 'HomeSwap | Home'
+  },[])
 
   return (
     <div>

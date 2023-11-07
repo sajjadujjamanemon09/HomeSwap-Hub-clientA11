@@ -1,26 +1,36 @@
+
 import { Link, NavLink } from "react-router-dom";
 import { FaUserCheck } from 'react-icons/fa';
 import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 
-
 const Navbar = () => {
-
-  const {user, logOut} = useContext(AuthContext)
+  const { user, logOut } = useContext(AuthContext);
 
   const handleSignOut = () => {
     logOut()
-    .then()
-    .catch()
-  }
+      .then()
+      .catch();
+  };
 
   const navLinks = (
     <>
       <li><NavLink to='/'>Home</NavLink></li>
       <li><NavLink to='/allServices'>All Services</NavLink></li>
-      
-     
     </>
+  );
+
+  const dashboardLinks = (
+    <li tabIndex={0}>
+      <details>
+        <summary>DashBoard</summary>
+        <ul className="p-2">
+          <li><NavLink to='/addProducts'>Add Service</NavLink></li>
+          <li><NavLink to='/mySchedule'>My Schedule</NavLink></li>
+          <li><NavLink to='/myServices'>My Services</NavLink></li>
+        </ul>
+      </details>
+    </li>
   );
 
   return (
@@ -48,55 +58,38 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             {navLinks}
-      <li tabIndex={0}>
-        <details>
-          <summary>DashBoard</summary>
-          <ul className="p-2">
-          <li><NavLink to='/addProducts'>Add Service</NavLink></li>
-          <li><NavLink to='/mySchedule'>My Schedule</NavLink></li>
-          <li><NavLink to='/addProducts'>My Services</NavLink></li>
-          </ul>
-        </details>
-      </li>
+            {user ? dashboardLinks : null}
           </ul>
         </div>
         <div className="flex items-center">
           <img className="w-20" src="https://i.ibb.co/dbpMn9L/maintenance.png" alt="" />
-        <a className="btn btn-ghost normal-case text-3xl font-bold">HomeSwap Hub</a>
+          <a className="btn btn-ghost normal-case text-3xl font-bold">HomeSwap Hub</a>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-        {navLinks}
-      <li tabIndex={0}>
-        <details>
-          <summary>DashBoard</summary>
-          <ul className="p-2">
-          <li><NavLink to='/addProducts'>Add Service</NavLink></li>
-          <li><NavLink to='/mySchedule'>My Schedule</NavLink></li>
-          <li><NavLink to='/addProducts'>My Services</NavLink></li>
-          </ul>
-        </details>
-      </li>
-       
+          {navLinks}
+          {user ? dashboardLinks : null}
         </ul>
       </div>
       <div className="navbar-end">
-        {
-          user ? 
+        {user ? (
           <>
-          <span className="pr-4"><img className="rounded-full w-11 h-11" src={user.photoURL} alt="" /></span>
+            <span className="pr-4"><img className="rounded-full w-11 h-11" src={user.photoURL} alt="" /></span>
             <span className="pr-4">{user.displayName}</span>
-          <button onClick={handleSignOut} className="btn btn-outline"><FaUserCheck></FaUserCheck>Sign Out</button>
+            <button onClick={handleSignOut} className="btn btn-outline">
+              <FaUserCheck />
+              Sign Out
+            </button>
           </>
-          
-          :
+        ) : (
           <Link to='/signIn'>
-        <button className="btn btn-outline"><FaUserCheck></FaUserCheck>Sign In</button>
-        </Link>
-        }
-        
-        
+            <button className="btn btn-outline">
+              <FaUserCheck />
+              Sign In
+            </button>
+          </Link>
+        )}
       </div>
     </div>
   );

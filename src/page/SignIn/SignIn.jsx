@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { FcGoogle } from 'react-icons/fc';
@@ -7,6 +7,10 @@ import Container from "../../components/ui/Container";
 
 
 const Login = () => {
+
+  useEffect(() => {
+    document.title = 'HomeSwap | SignIn'
+  },[])
 
   const {signIn, logInWithGoogle} = useContext(AuthContext)
   const location = useLocation()

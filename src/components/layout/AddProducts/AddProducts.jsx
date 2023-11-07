@@ -1,15 +1,23 @@
+import { useContext, useEffect } from 'react';
 import swal from 'sweetalert';
+import { AuthContext } from '../../../providers/AuthProvider';
 
 const AddProducts = () => {
+    const { user } = useContext(AuthContext);
+
+    useEffect(() => {
+        document.title = 'HomeSwap | Add Service'
+      },[])
+
 
     const handleAddProduct = event => {
         event.preventDefault();
 
         const form = event.target;
 
-        const userName = form.userName.value;
+        const userName = user ? user.displayName : form.userName.value;
+        const email = user ? user.email : form.email.value;
         const serviceName = form.serviceName.value;
-        const email = form.email.value;
         const price = form.price.value;
         const description = form.description.value;
         const image = form.image.value;
@@ -45,24 +53,47 @@ const AddProducts = () => {
         </div>
         <form onSubmit={handleAddProduct}>
             {/* name and Brand name Row */}
-            <div className="md:flex mb-8">
-                <div className="form-control md:w-1/2">
-                    <label className="label">
-                        <span className="label-text">User Name</span>
-                    </label>
-                    <label className="input-group">
-                        <input type="text" name="userName" placeholder="User Name" className="input input-bordered w-full" />
-                    </label>
-                </div>
-                <div className="form-control md:w-1/2 md:ml-4">
-                <label className="label">
-                        <span className="label-text">User Email</span>
-                    </label>
-                    <label className="input-group">
-                        <input type="email" name="email" placeholder="Email" className="input input-bordered w-full" />
-                    </label>
-                </div>
-            </div>
+            {user ? (
+                    <div className="md:flex mb-8">
+                        <div className="form-control md:w-1/2">
+                            <label className="label">
+                                <span className="label-text">User Name</span>
+                            </label>
+                            <label className="input-group">
+                                <input type="text" name="userName" value={user.displayName} readOnly className="input input-bordered w-full" />
+                            </label>
+                        </div>
+                        <div className="form-control md:w-1/2 md:ml-4">
+                            <label className="label">
+                                <span className="label-text">User Email</span>
+                            </label>
+                            <label className="input-group">
+                                <input type="email" name="email" value={user.email} readOnly className="input input-bordered w-full" />
+                            </label>
+                        </div>
+                    </div>
+                ) : (
+                    <>
+                        <div className="md:flex mb-8">
+                            <div className="form-control md:w-1/2">
+                                <label className="label">
+                                    <span className="label-text">User Name</span>
+                                </label>
+                                <label className="input-group">
+                                    <input type="text" name="userName" placeholder="User Name" className="input input-bordered w-full" />
+                                </label>
+                            </div>
+                            <div className="form-control md:w-1/2 md:ml-4">
+                                <label className="label">
+                                    <span className="label-text">User Email</span>
+                                </label>
+                                <label className="input-group">
+                                    <input type="email" name="email" placeholder="Email" className="input input-bordered w-full" />
+                                </label>
+                            </div>
+                        </div>
+                    </>
+                )}
             {/* type & price row */}
             <div className="md:flex mb-8">
                 <div className="form-control md:w-1/2">

@@ -8,6 +8,8 @@ import AddProducts from "../components/layout/AddProducts/AddProducts";
 import UpdateServices from "../components/layout/UpdateServices/UpdateServices";
 import AllServices from "../page/AllServices/AllServices";
 import SingleServices from "../page/SingleServices/SingleServices";
+import MyServices from "../page/MyServices/MyServices";
+import MySchedule from "../page/MySchedule/MySchedule";
 
 const routes = createBrowserRouter([
   {
@@ -31,6 +33,14 @@ const routes = createBrowserRouter([
       {
         path: 'addProducts',
         element: <AddProducts />,
+      },
+      {
+        path: 'myServices',
+        element: <MyServices />,
+      },
+      {
+        path: 'mySchedule',
+        element: <MySchedule />,
       },
       {
         path: 'allServices',

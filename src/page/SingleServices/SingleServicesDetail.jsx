@@ -2,8 +2,13 @@ import { FaDollarSign } from "react-icons/fa";
 import { FaLocationDot, FaCalendarDays } from "react-icons/fa6";
 import BookNowForm from "../../components/layout/BookNowForm/BookNowForm";
 import ServiceProviderDetail from "../../components/layout/ServiceProviderDetail/ServiceProviderDetail";
+import { useEffect } from "react";
 
 const SingleServicesDetail = ({ product }) => {
+  useEffect(() => {
+    document.title = 'HomeSwap | View Detail'
+  },[])
+
   const { userName, serviceName, price, description, image, area } = product;
 
   return (

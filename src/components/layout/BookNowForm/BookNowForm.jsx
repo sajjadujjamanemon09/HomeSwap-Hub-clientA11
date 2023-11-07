@@ -145,14 +145,14 @@ const BookNowForm = () => {
             <div className="md:flex mb-8">
               <div className="form-control md:w-1/2">
                 <label className="label">
-                  <span className="label-text">Description</span>
+                  <span className="label-text">Date</span>
                 </label>
                 <label className="input-group">
                   <input
                     type="date"
                     defaultValue={date}
                     name="date"
-                    placeholder="Description"
+                    placeholder="Date"
                     className="input input-bordered w-full"
                   />
                 </label>

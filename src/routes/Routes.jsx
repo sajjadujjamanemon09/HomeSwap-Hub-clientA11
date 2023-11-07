@@ -41,6 +41,7 @@ const routes = createBrowserRouter([
       {
         path: 'mySchedule',
         element: <MySchedule />,
+        loader: () => fetch('http://localhost:5000/bookings')
       },
       {
         path: 'allServices',

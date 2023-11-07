@@ -32,7 +32,7 @@ const UpdateServices = () => {
     console.log(updatedService);
 
     // send data to the server
-    fetch(`http://localhost:5000/services/${_id}`, {
+    fetch(`http://localhost:5000/bookings/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

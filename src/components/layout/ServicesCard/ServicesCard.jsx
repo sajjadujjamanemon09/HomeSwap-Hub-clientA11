@@ -17,7 +17,7 @@ const ServicesCard = ({product}) => {
           <h2 className="text-sm font-extrabold">{userName}</h2>
         </div>
         <div>
-          <p className="text-lg font-semibold">{price}</p>
+          <p className="text-lg font-semibold">$ {price}</p>
         </div>
         </div>
         <h2 className="card-title">{serviceName}</h2>

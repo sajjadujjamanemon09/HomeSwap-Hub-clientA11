@@ -17,7 +17,7 @@ const AllServiceCard = ({product}) => {
           <h2 className="text-sm font-extrabold">{userName}</h2>
         </div>
         <div>
-          <p className="text-lg font-semibold">{price}</p>
+          <p className="text-lg font-semibold">$ {price}</p>
         </div>
         </div>
         <h2 className="card-title">{serviceName}</h2>
@@ -34,7 +34,6 @@ const AllServiceCard = ({product}) => {
         </div>
         <div className="card-actions items-end justify-end">
         <Link to={`/singleService/${_id}`}> <button className="btn btn-neutral text-white">View Detail <FaForward></FaForward> </button></Link>
-        <Link to={`/updateService/${_id}`}> <button className="btn btn-neutral text-white"> Update <FaForward></FaForward> </button></Link>
         </div>
       </div>
     </div>

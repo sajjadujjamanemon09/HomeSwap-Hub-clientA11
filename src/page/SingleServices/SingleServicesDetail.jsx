@@ -3,6 +3,7 @@ import { FaLocationDot, FaCalendarDays } from "react-icons/fa6";
 import BookNowForm from "../../components/layout/BookNowForm/BookNowForm";
 import ServiceProviderDetail from "../../components/layout/ServiceProviderDetail/ServiceProviderDetail";
 import { useEffect } from "react";
+import ServiceProviderItem from "../../components/layout/ServiceProviderDetail/ServiceProviderItem";
 
 const SingleServicesDetail = ({ product }) => {
   useEffect(() => {
@@ -52,12 +53,13 @@ const SingleServicesDetail = ({ product }) => {
      <div className="w-full">
 <BookNowForm></BookNowForm>
      </div>
+     <div>
+      <h2 className="text-xl font-semibold text-center pt-20">Other Service Of this Provider</h2>
+      <ServiceProviderItem></ServiceProviderItem>
+     </div>
     </div>
   );
 };
 
 export default SingleServicesDetail;
 
-{/* <button className="btn ">
-Book Now{" "}
-</button> */}

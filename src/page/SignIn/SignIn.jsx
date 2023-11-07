@@ -4,7 +4,8 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { FcGoogle } from 'react-icons/fc';
 import swal from 'sweetalert';
 import Container from "../../components/ui/Container";
-
+import Lottie from "lottie-react";
+import finger from "../../../finger.json"
 
 const Login = () => {
 
@@ -87,7 +88,7 @@ const Login = () => {
     </div>
   </div>
   <div>
-    <img src="https://i.ibb.co/s98wDp1/undraw-Access-account-re-8spm.png" alt="" />
+  <Lottie animationData={finger} loop={true}/>
   </div>
 </div>
 </Container>

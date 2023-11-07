@@ -1,11 +1,14 @@
-import { FaLocationArrow } from "react-icons/fa";
 
+import { FaLocationArrow } from "react-icons/fa";
 
 const ServiceProviderDetail = () => {
     return (
-        <div>
+      <div>
+        
+
             <div>
-            <h2 className="text-3xl font-bold text-center py-8">
+      
+            <h2 className="text-3xl font-bold text-center lg:pt-20 pb-8">
             Service Provider Information
             </h2>
         </div>

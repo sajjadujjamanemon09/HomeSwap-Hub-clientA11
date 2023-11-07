@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import BookedService from "../../components/layout/BookingService/BookedService";
+import MyPending from "../../components/layout/MyPending/MyPending";
 
 
 const MySchedule = () => {
@@ -29,7 +30,7 @@ const MySchedule = () => {
            </div>
            </div>
            
-            <h2>My Pending works Section</h2>
+            <MyPending></MyPending>
         </div>
     );
 };

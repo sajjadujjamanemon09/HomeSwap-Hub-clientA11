@@ -4,6 +4,8 @@ import { AuthContext } from "../../providers/AuthProvider";
 import swal from 'sweetalert';
 import { updateProfile } from "firebase/auth";
 import Container from "../../components/ui/Container";
+import Lottie from "lottie-react";
+import register from "../../../register.json"
 
 
 const SignUp = () => {
@@ -66,7 +68,8 @@ const SignUp = () => {
         <Container>
         <div className="md:flex justify-evenly items-center">
             <div>
-                <img src="https://i.ibb.co/gTz3xw2/undraw-Mobile-login-re-9ntv.png" alt="" />
+                {/* <img src="https://i.ibb.co/s98wDp1/undraw-Access-account-re-8spm.png" alt="" /> */}
+                <Lottie animationData={register} loop={true}/>
             </div>
             <div className="hero min-h-[90vh]">
 

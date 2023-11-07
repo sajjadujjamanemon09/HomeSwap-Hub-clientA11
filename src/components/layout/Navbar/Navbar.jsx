@@ -3,9 +3,14 @@ import { Link, NavLink } from "react-router-dom";
 import { FaUserCheck } from 'react-icons/fa';
 import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
+import { useTypewriter } from "react-simple-typewriter";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [text] = useTypewriter({
+    words: ['HomeSwap Hub'],
+    loop: 0
+});
 
   const handleSignOut = () => {
     logOut()
@@ -63,7 +68,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center">
           <img className="w-20" src="https://i.ibb.co/dbpMn9L/maintenance.png" alt="" />
-          <a className="btn btn-ghost normal-case text-3xl font-bold">HomeSwap Hub</a>
+          <a className="btn btn-ghost normal-case text-3xl font-bold">{text}</a>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">

@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
 
@@ -10,7 +11,7 @@ const BookedService = ({product,products,setProducts}) => {
         console.log(id);
         swal({
             title: "Are you sure?",
-            text: "Once deleted, you will not be able to recover this Cart!",
+            text: "Once deleted, you will not be able to recover this Bookings!",
             icon: "warning",
             buttons: true,
             dangerMode: true,
@@ -24,7 +25,7 @@ const BookedService = ({product,products,setProducts}) => {
                 .then(data => {
                     console.log(data);
                     if(data.deletedCount > 0){
-                        swal("Success! Your Selected cart has deleted!", {
+                        swal("Success! Your Selected Booking has deleted!", {
                             icon: "success",
                           });
                           const remaining = products.filter(car => car._id !== id)

@@ -21,52 +21,76 @@ const routes = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-        loader: () => fetch('http://localhost:5000/services')
+        loader: () => fetch("https://assignment-11-server-rose-gamma.vercel.app/services"),
       },
       {
-        path: 'signIn',
-        element: <SignIn />
+        path: "signIn",
+        element: <SignIn />,
       },
       {
-        path: 'signUp',
+        path: "signUp",
         element: <SignUp />,
       },
       {
-        path: 'addProducts',
-        element: <PrivateRoutes><AddProducts /></PrivateRoutes>,
+        path: "addProducts",
+        element: (
+          <PrivateRoutes>
+            <AddProducts />
+          </PrivateRoutes>
+        ),
       },
       {
-        path: 'myServices',
-        element: <PrivateRoutes><MyServices /></PrivateRoutes>,
+        path: "myServices",
+        element: (
+          <PrivateRoutes>
+            <MyServices />
+          </PrivateRoutes>
+        ),
       },
       {
-        path: 'mySchedule',
-        element: <PrivateRoutes><MySchedule /></PrivateRoutes>,
-        loader: () => fetch('http://localhost:5000/bookings')
+        path: "mySchedule",
+        element: (
+          <PrivateRoutes>
+            <MySchedule />
+          </PrivateRoutes>
+        ),
+        loader: () => fetch("https://assignment-11-server-rose-gamma.vercel.app/bookings"),
       },
       {
-        path: 'allServices',
-        element: <PrivateRoutes><AllServices /></PrivateRoutes>,
-        loader: () => fetch('http://localhost:5000/services')
+        path: "allServices",
+        element: (
+          <PrivateRoutes>
+            <AllServices />
+          </PrivateRoutes>
+        ),
+        loader: () => fetch("https://assignment-11-server-rose-gamma.vercel.app/services"),
       },
       {
-        path: 'updateService/:id',
-        element: <PrivateRoutes><UpdateServices/></PrivateRoutes>,
-        loader: ({params}) => fetch(`http://localhost:5000/bookings/${params.id}`)
+        path: "updateService/:id",
+        element: (
+          <PrivateRoutes>
+            <UpdateServices />
+          </PrivateRoutes>
+        ),
+        loader: ({ params }) =>
+          fetch(`https://assignment-11-server-rose-gamma.vercel.app/bookings/${params.id}`),
       },
       {
-        path: 'singleService/:id',
-        element: <PrivateRoutes><SingleServices/></PrivateRoutes>,
-        loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+        path: "singleService/:id",
+        element: (
+          <PrivateRoutes>
+            <SingleServices />
+          </PrivateRoutes>
+        ),
+        loader: ({ params }) =>
+          fetch(`https://assignment-11-server-rose-gamma.vercel.app/services/${params.id}`),
       },
-    ]
+    ],
   },
   {
-    path: '/errorPage',
-    element: <ErrorPage />
-  }
+    path: "/errorPage",
+    element: <ErrorPage />,
+  },
 ]);
-
-
 
 export default routes;

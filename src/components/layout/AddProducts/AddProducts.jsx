@@ -28,7 +28,7 @@ const AddProducts = () => {
         console.log(newProduct); 
 
         // send data to the server
-        fetch('http://localhost:5000/services', {
+        fetch('https://assignment-11-server-rose-gamma.vercel.app/services', {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

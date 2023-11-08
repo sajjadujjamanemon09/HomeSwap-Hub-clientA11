@@ -11,9 +11,19 @@ const MySchedule = () => {
     const [products,setProducts] = useState(data)
 
 
+    const url = `http://localhost:5000/bookings`
+
     useEffect(() => {
         document.title = 'HomeSwap | My Schedule'
       },[])
+
+      useEffect(() => {
+        fetch(url, {credentials: 'include'})
+        .then(res => res.json())
+        .then(data => setProducts(data))
+      },[])
+
+
     return (
         <div className="max-w-7xl mx-auto">
            <div>

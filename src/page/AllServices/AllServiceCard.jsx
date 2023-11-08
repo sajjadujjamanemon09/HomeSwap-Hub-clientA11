@@ -21,13 +21,13 @@ const AllServiceCard = ({product}) => {
         </div>
         </div>
         <h2 className="card-title">{serviceName}</h2>
-        <p>
+        <div>
         {
           description.length > 200 
           ? <p>{description.slice(0,80)}</p>
           : <p>{description}</p>
         }
-        </p>
+        </div>
         <div className="flex items-center gap-2">
         <FaLocationArrow/> 
         <p className="text-sm font-thin">{area}</p>

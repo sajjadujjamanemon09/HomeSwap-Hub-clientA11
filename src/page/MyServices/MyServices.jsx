@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import MyPending from "../../components/layout/MyPending/MyPending";
 
 
 const MyServices = () => {
@@ -9,7 +10,7 @@ const MyServices = () => {
 
     return (
         <div>
-            <h2>All of my Services Here</h2>
+             <MyPending></MyPending>
         </div>
     );
 };

@@ -10,6 +10,7 @@ import AllServices from "../page/AllServices/AllServices";
 import SingleServices from "../page/SingleServices/SingleServices";
 import MyServices from "../page/MyServices/MyServices";
 import MySchedule from "../page/MySchedule/MySchedule";
+import PrivateRoutes from "./PrivateRoutes";
 
 const routes = createBrowserRouter([
   {
@@ -32,30 +33,30 @@ const routes = createBrowserRouter([
       },
       {
         path: 'addProducts',
-        element: <AddProducts />,
+        element: <PrivateRoutes><AddProducts /></PrivateRoutes>,
       },
       {
         path: 'myServices',
-        element: <MyServices />,
+        element: <PrivateRoutes><MyServices /></PrivateRoutes>,
       },
       {
         path: 'mySchedule',
-        element: <MySchedule />,
+        element: <PrivateRoutes><MySchedule /></PrivateRoutes>,
         loader: () => fetch('http://localhost:5000/bookings')
       },
       {
         path: 'allServices',
-        element: <AllServices />,
+        element: <PrivateRoutes><AllServices /></PrivateRoutes>,
         loader: () => fetch('http://localhost:5000/services')
       },
       {
         path: 'updateService/:id',
-        element: <UpdateServices/>,
+        element: <PrivateRoutes><UpdateServices/></PrivateRoutes>,
         loader: ({params}) => fetch(`http://localhost:5000/bookings/${params.id}`)
       },
       {
         path: 'singleService/:id',
-        element: <SingleServices/>,
+        element: <PrivateRoutes><SingleServices/></PrivateRoutes>,
         loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
       },
     ]

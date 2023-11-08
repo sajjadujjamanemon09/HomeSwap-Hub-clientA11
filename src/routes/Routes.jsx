@@ -21,7 +21,8 @@ const routes = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-        loader: () => fetch("https://assignment-11-server-rose-gamma.vercel.app/services"),
+        loader: () =>
+          fetch("https://assignment-11-server-rose-gamma.vercel.app/services"),
       },
       {
         path: "signIn",
@@ -54,7 +55,8 @@ const routes = createBrowserRouter([
             <MySchedule />
           </PrivateRoutes>
         ),
-        loader: () => fetch("https://assignment-11-server-rose-gamma.vercel.app/bookings"),
+        loader: () =>
+          fetch("https://assignment-11-server-rose-gamma.vercel.app/bookings"),
       },
       {
         path: "allServices",
@@ -63,7 +65,8 @@ const routes = createBrowserRouter([
             <AllServices />
           </PrivateRoutes>
         ),
-        loader: () => fetch("https://assignment-11-server-rose-gamma.vercel.app/services"),
+        loader: () =>
+          fetch("https://assignment-11-server-rose-gamma.vercel.app/services"),
       },
       {
         path: "updateService/:id",
@@ -73,7 +76,9 @@ const routes = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`https://assignment-11-server-rose-gamma.vercel.app/bookings/${params.id}`),
+          fetch(
+            `https://assignment-11-server-rose-gamma.vercel.app/bookings/${params.id}`
+          ),
       },
       {
         path: "singleService/:id",
@@ -83,7 +88,9 @@ const routes = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`https://assignment-11-server-rose-gamma.vercel.app/services/${params.id}`),
+          fetch(
+            `https://assignment-11-server-rose-gamma.vercel.app/services/${params.id}`
+          ),
       },
     ],
   },

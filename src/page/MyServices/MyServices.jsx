@@ -1,12 +1,23 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import ManageMyService from "./ManageMyService";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const MyServices = () => {
   const data = useLoaderData();
+  const {user} = useContext(AuthContext);
+  
   const [products, setProducts] = useState(data);
-  const url = `http://localhost:5000/userServices`;
 
+  const userUrl = `http://localhost:5000/userIdServices?email=${user?.email}`;
+  useEffect(() => {
+      fetch(userUrl)
+          .then(res => res.json())
+          .then(data => setProducts(data))
+  }, [user, userUrl]);
+
+
+  const url = `http://localhost:5000/userServices`;
   useEffect(() => {
     fetch(url, { credentials: "include" })
       .then((res) => res.json())
@@ -25,7 +36,6 @@ const MyServices = () => {
           {/* head */}
           <thead className="bg-base-300">
             <tr>
-                <label></label>
               <th className="sm:w-1/3 md:w-1/4 lg:w-1/6font-bold text-xl text-black">User Name</th>
               <th className="sm:w-1/3 md:w-1/4 lg:w-1/6font-bold text-xl text-black">Service Name</th>
               <th className="sm:w-1/3 md:w-1/4 lg:w-1/6font-bold text-xl text-black">Price</th>

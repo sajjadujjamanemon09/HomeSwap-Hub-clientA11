@@ -19,7 +19,7 @@ const MySchedule = () => {
     fetch(url, { credentials: "include" })
       .then((res) => res.json())
       .then((data) => setProducts(data));
-  }, []);
+  }, [url]);
 
   return (
     <div className="max-w-7xl mx-auto">

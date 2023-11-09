@@ -35,8 +35,6 @@ const ManageMyService = ({product, products, setProducts}) => {
     }
     return (
         <tr className="text-lg font">
-        <th>
-        </th>
         <td className="flex items-center"><RiArrowRightSFill className="text-3xl"></RiArrowRightSFill>{userName}</td>
         <td>{serviceName}</td>
         <td>{price}</td>
@@ -44,7 +42,7 @@ const ManageMyService = ({product, products, setProducts}) => {
         <td className="text-3xl flex gap-6">
             <Link to={`/updateService/${_id}`}><RiEdit2Fill className="text-green-600"></RiEdit2Fill></Link>
             <div onClick={() => handleRemove(_id)}>
-            <RiDeleteBinLine className="text-red-600"></RiDeleteBinLine>
+            <Link><RiDeleteBinLine className="text-red-600"></RiDeleteBinLine></Link>
             </div>
             </td>
       </tr>

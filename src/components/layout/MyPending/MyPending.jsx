@@ -19,7 +19,7 @@ const MyPending = ({ hasPendingServices }) => {
         )}{" "}
 
         
-<div className="grid grid-cols-6 gap-2">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-2">
           {/* card 1 */}
           <div className=" relative flex flex-col text-gray-700 shadow-md rounded-xl border border-black bg-clip-border">
           <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white rounded-xl bg-clip-border">

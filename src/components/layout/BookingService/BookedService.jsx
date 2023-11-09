@@ -1,10 +1,9 @@
 
-import { Link } from "react-router-dom";
 import swal from "sweetalert";
 
 
 const BookedService = ({product,products,setProducts}) => {
-    const {_id, image, userName, area, serviceName} = product;
+    const {_id, image, userName, area, serviceName, price} = product;
 
 
     const handleRemove = (id) => {
@@ -18,7 +17,7 @@ const BookedService = ({product,products,setProducts}) => {
           })
           .then((willDelete) => {
             if (willDelete) {
-                fetch(`https://assignment-11-server-rose-gamma.vercel.app/bookings/${_id}`,{
+                fetch(`http://localhost:5000/bookings/${_id}`,{
                     method: 'DELETE'
                 })
                 .then(res => res.json())
@@ -57,6 +56,9 @@ const BookedService = ({product,products,setProducts}) => {
     <p className="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
       {area}
     </p>
+    <p className="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
+      $ {price}
+    </p>
   </div>
   <div className="p-6 pt-0">
     <button
@@ -66,7 +68,6 @@ const BookedService = ({product,products,setProducts}) => {
     >
       Remove
     </button>
-      <Link to={`/updateService/${_id}`}> <button className="my-4 block w-full bg-slate-900 text-white select-none rounded-lg bg-blue-gray-900/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"> Update</button></Link>
   </div>
 </div>
     );

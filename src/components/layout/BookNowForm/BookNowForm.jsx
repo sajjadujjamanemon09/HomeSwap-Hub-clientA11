@@ -43,7 +43,7 @@ const BookNowForm = () => {
     console.log(bookService);
 
     // send data to the server
-    fetch("https://assignment-11-server-rose-gamma.vercel.app/bookings", {
+    fetch("http://localhost:5000/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",

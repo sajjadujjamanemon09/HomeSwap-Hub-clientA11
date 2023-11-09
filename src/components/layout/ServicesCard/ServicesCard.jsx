@@ -21,13 +21,13 @@ const ServicesCard = ({product}) => {
         </div>
         </div>
         <h2 className="card-title">{serviceName}</h2>
-        <p>
+        <div>
         {
           description.length > 200 
           ? <p>{description.slice(0,80)}</p>
           : <p>{description}</p>
         }
-        </p>
+        </div>
         <div className="card-actions items-end justify-end">
           <Link  to={`/singleService/${_id}`}>
           <button className="btn btn-neutral">View Details</button>

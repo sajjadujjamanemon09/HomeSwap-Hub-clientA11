@@ -2,13 +2,14 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import BookedService from "../../components/layout/BookingService/BookedService";
+import MyPending from "../../components/layout/MyPending/MyPending";
 
 const MySchedule = () => {
   const data = useLoaderData();
 
   const [products, setProducts] = useState(data);
 
-  const url = `https://assignment-11-server-rose-gamma.vercel.app/bookings`;
+  const url = `http://localhost:5000/bookings`;
 
   useEffect(() => {
     document.title = "HomeSwap | My Schedule";
@@ -41,6 +42,7 @@ const MySchedule = () => {
           </div>
         )}
       </div>
+      <MyPending></MyPending>
     </div>
   );
 };

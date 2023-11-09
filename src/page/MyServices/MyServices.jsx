@@ -9,7 +9,7 @@ const MyServices = () => {
   
   const [products, setProducts] = useState(data);
 
-  const userUrl = `http://localhost:5000/userIdServices?email=${user?.email}`;
+  const userUrl = `https://assignment-11-server-rose-gamma.vercel.app/userIdServices?email=${user?.email}`;
   useEffect(() => {
       fetch(userUrl)
           .then(res => res.json())
@@ -17,7 +17,7 @@ const MyServices = () => {
   }, [user, userUrl]);
 
 
-  const url = `http://localhost:5000/userServices`;
+  const url = `https://assignment-11-server-rose-gamma.vercel.app/userServices`;
   useEffect(() => {
     fetch(url, { credentials: "include" })
       .then((res) => res.json())

@@ -48,7 +48,7 @@ const AuthProvider = ({ children }) => {
       // if user exists then issue a token
       if (currentUser) {
         axios
-          .post("http://localhost:5000/jwt", loggedUser, {
+          .post("https://assignment-11-server-rose-gamma.vercel.app/jwt", loggedUser, {
             withCredentials: true,
           })
           .then((res) => {
@@ -56,7 +56,7 @@ const AuthProvider = ({ children }) => {
           });
       } else {
         axios
-          .post("http://localhost:5000/logout", loggedUser, {
+          .post("https://assignment-11-server-rose-gamma.vercel.app/logout", loggedUser, {
             withCredentials: true,
           })
           .then((res) => {

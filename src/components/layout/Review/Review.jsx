@@ -22,7 +22,7 @@ const Review = () => {
 				</p>
 			</div>
 			<div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-400 dark:text-gray-900">
-				<img src="https://i.ibb.co/0yxQ5vg/undraw-Pic-profile-re-7g2h.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
+				<img src="https://iili.io/JAfoLwg.jpg" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
 				<p className="text-xl font-semibold leadi">Robert Dawni</p>
 				<p className="text-sm uppercase">Aliquam illum</p>
 			</div>
@@ -41,7 +41,7 @@ const Review = () => {
 				</p>
 			</div>
 			<div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-400 dark:text-gray-900">
-				<img src="https://i.ibb.co/Vwy7GzM/undraw-Female-avatar-efig.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
+				<img src="https://iili.io/JAfIBvS.jpg" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
 				<p className="text-xl font-semibold leadi">Tania Hens</p>
 				<p className="text-sm uppercase">Servior Cop</p>
 			</div>
@@ -60,7 +60,7 @@ const Review = () => {
 				</p>
 			</div>
 			<div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-400 dark:text-gray-900">
-				<img src="https://i.ibb.co/0yxQ5vg/undraw-Pic-profile-re-7g2h.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
+				<img src="https://iili.io/JAfTOUQ.jpg" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
 				<p className="text-xl font-semibold leadi">Jonny Depp</p>
 				<p className="text-sm uppercase">See Pirate</p>
 			</div>
@@ -79,7 +79,7 @@ const Review = () => {
 				</p>
 			</div>
 			<div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-400 dark:text-gray-900">
-				<img src="https://i.ibb.co/Vwy7GzM/undraw-Female-avatar-efig.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
+				<img src="https://iili.io/JAfzfmF.jpg" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-700" />
 				<p className="text-xl font-semibold leadi">Alexa Bliss</p>
 				<p className="text-sm uppercase">Wrestler Star</p>
 			</div>

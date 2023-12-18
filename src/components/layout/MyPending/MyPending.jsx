@@ -41,7 +41,7 @@ const MyPending = ({ hasPendingServices }) => {
               </ul>
             </div>
             <img
-              src="https://i.ibb.co/dBDxnHR/6127608-22939.jpg"
+              src="https://iili.io/JAFY6X9.jpg"
               className="object-cover w-full h-60"
             />
           </div>
@@ -82,7 +82,7 @@ const MyPending = ({ hasPendingServices }) => {
               </ul>
             </div>
             <img
-              src="https://i.ibb.co/DwJ3Qjf/9378115-33896.jpg"
+              src="https://iili.io/JAFD4UB.jpg"
               className="object-cover w-full h-60"
             />
           </div>
@@ -123,7 +123,7 @@ const MyPending = ({ hasPendingServices }) => {
               </ul>
             </div>
             <img
-              src="https://i.ibb.co/HX4HbCT/1322632-163949-OVJRYS-825.jpg"
+              src="https://iili.io/JAKHhUx.jpg"
               className="object-cover w-full h-60"
             />
           </div>
@@ -164,7 +164,7 @@ const MyPending = ({ hasPendingServices }) => {
               </ul>
             </div>
             <img
-              src="https://i.ibb.co/88HNRQj/4887688-52068.jpg"
+              src="https://iili.io/JAKj9ob.jpg"
               className="object-cover w-full h-60"
             />
           </div>
@@ -205,7 +205,7 @@ const MyPending = ({ hasPendingServices }) => {
               </ul>
             </div>
             <img
-              src="https://i.ibb.co/kMz3ftP/22873961-6713785.jpg"
+              src="https://iili.io/JAKhM91.jpg"
               className="object-cover w-full h-60"
             />
           </div>
@@ -246,7 +246,7 @@ const MyPending = ({ hasPendingServices }) => {
               </ul>
             </div>
             <img
-              src="https://i.ibb.co/g6smVyt/2870128-6316.jpg"
+              src="https://iili.io/JAFphSp.jpg"
               className="object-cover w-full h-60"
             />
           </div>

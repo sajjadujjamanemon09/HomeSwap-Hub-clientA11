@@ -9,7 +9,7 @@ const MySchedule = () => {
 
   const [products, setProducts] = useState(data);
 
-  const url = `http://localhost:5000/bookings`;
+  const url = `https://assignment-11-server-rose-gamma.vercel.app/bookings`;
 
   useEffect(() => {
     document.title = "HomeSwap | My Schedule";

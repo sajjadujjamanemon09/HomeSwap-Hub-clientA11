@@ -17,7 +17,7 @@ const BookedService = ({product,products,setProducts}) => {
           })
           .then((willDelete) => {
             if (willDelete) {
-                fetch(`https://assignment-11-server-rose-gamma.vercel.app/bookings/${_id}`,{
+                fetch(`http://localhost:5000/bookings/${_id}`,{
                     method: 'DELETE'
                 })
                 .then(res => res.json())

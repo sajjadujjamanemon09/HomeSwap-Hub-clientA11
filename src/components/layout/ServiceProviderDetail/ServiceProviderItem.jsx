@@ -7,7 +7,7 @@ const ServiceProviderItem = () => {
            <div className="relative flex flex-col text-gray-700 bg-white shadow-md rounded-xl bg-clip-border">
         <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white rounded-xl bg-clip-border">
           <img
-            src='https://i.ibb.co/Ybc8Ykh/3097940-454290-PFH47-J-722.jpg'
+            src='https://iili.io/JAKhM91.jpg'
             className="object-cover w-full h-60"
           />
         </div>
@@ -31,7 +31,7 @@ const ServiceProviderItem = () => {
        <div className="relative flex flex-col text-gray-700 bg-white shadow-md rounded-xl bg-clip-border">
        <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white rounded-xl bg-clip-border">
           <img
-            src='https://i.ibb.co/yfhC423/2869893-6267.jpg'
+            src='https://iili.io/JAKj9ob.jpg'
             className="object-cover w-full h-60"
           />
         </div>

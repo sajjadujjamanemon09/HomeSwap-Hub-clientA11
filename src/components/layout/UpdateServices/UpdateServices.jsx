@@ -32,8 +32,8 @@ const UpdateServices = () => {
     console.log(updatedService);
 
     // send data to the server
-    fetch(`https://assignment-11-server-rose-gamma.vercel.app/bookings/${_id}`,
-    `https://assignment-11-server-rose-gamma.vercel.app/userServices/${_id}`, {
+    fetch(`http://localhost:5000/bookings/${_id}`,
+    `http://localhost:5000/userServices/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

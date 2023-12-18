@@ -40,8 +40,8 @@ const SingleServicesDetail = ({ product }) => {
       </p>
     </div>
       <div className="flex items-center">
-        <img className="w-14" src="https://i.ibb.co/0yxQ5vg/undraw-Pic-profile-re-7g2h.png" alt="" />
-        <p className="font-bold text-2xl">{userName}</p>
+        <img className="w-14 rounded-full " src="https://iili.io/JAKEpt4.jpg" alt="" />
+        <p className="font-bold text-2xl pl-3">{userName}</p>
       </div>
 </div>
 

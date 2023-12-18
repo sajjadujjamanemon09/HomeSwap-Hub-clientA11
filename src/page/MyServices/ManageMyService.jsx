@@ -16,7 +16,7 @@ const ManageMyService = ({product, products, setProducts}) => {
           })
           .then((willDelete) => {
             if (willDelete) {
-                fetch(`https://assignment-11-server-rose-gamma.vercel.app/userServices/${_id}`,{
+                fetch(`http://localhost:5000/userServices/${_id}`,{
                     method: 'DELETE'
                 })
                 .then(res => res.json())

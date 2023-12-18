@@ -13,7 +13,7 @@ const ServiceProviderDetail = () => {
             </h2>
         </div>
 <div className="card md:card-side  w-3/4 mx-auto bg-base-300 shadow-2xl">
-  <figure><img className="w-72" src="https://i.ibb.co/j4CsjqN/827.jpg" alt="Album"/></figure>
+  <figure><img className="w-72" src="https://iili.io/JAKXf1V.jpg" alt="Album"/></figure>
   <div className="card-body w-3/4">
     <h2 className="card-title">John Abraham</h2>
     <div className="flex items-center gap-4">

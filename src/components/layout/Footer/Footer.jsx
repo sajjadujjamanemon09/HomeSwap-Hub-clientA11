@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
-      <img className="w-20" src="https://i.ibb.co/dbpMn9L/maintenance.png" alt="" />
+      <img className="w-20" src="https://iili.io/JAFcB3b.png" alt="" />
       <h2 className="text-2xl font-semibold">HomeSwap Hub</h2>
         <nav className="grid grid-flow-col gap-4">
           <a className="link link-hover">About us</a>

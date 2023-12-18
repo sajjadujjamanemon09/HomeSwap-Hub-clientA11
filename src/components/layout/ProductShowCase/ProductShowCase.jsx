@@ -22,7 +22,7 @@ const ProductShowCase = () => {
                 </div>
                 </div>
                   <figure className="px-3 pt-3">
-                    <img src="https://i.ibb.co/g6smVyt/2870128-6316.jpg" alt="" className="rounded-xl h-80 w-full" />
+                    <img src="https://iili.io/JAKNu9I.jpg" alt="" className="rounded-xl h-80 w-full" />
                   </figure>
                   <div className="flex justify-center gap-10 items-center text-center p-8">
                     
@@ -45,7 +45,7 @@ const ProductShowCase = () => {
                 </div>
                 </div>
                   <figure className="px-3 pt-3">
-                    <img src="https://i.ibb.co/dBDxnHR/6127608-22939.jpg" alt="" className="rounded-xl h-80 w-full" />
+                    <img src="https://iili.io/JAKNgN1.jpg" alt="" className="rounded-xl h-80 w-full" />
                   </figure>
                   <div className="flex justify-center gap-10 items-center text-center p-8">
                     
@@ -68,7 +68,7 @@ const ProductShowCase = () => {
                 </div>
                 </div>
                   <figure className="px-3 pt-3">
-                    <img src="https://i.ibb.co/JFJBtvp/4851130-2489245.jpg" alt="" className="rounded-xl h-80 w-full" />
+                    <img src="https://iili.io/JAKkxFj.jpg" alt="" className="rounded-xl h-80 w-full" />
                   </figure>
                   <div className="flex justify-center gap-10 items-center text-center p-8">
                     
@@ -91,7 +91,7 @@ const ProductShowCase = () => {
                 </div>
                 </div>
                   <figure className="px-3 pt-3">
-                    <img src="https://i.ibb.co/2v4bhX1/6127605-22936.jpg" alt="" className="rounded-xl h-80 w-full" />
+                    <img src="https://iili.io/JAK4M11.jpg" alt="" className="rounded-xl h-80 w-full" />
                   </figure>
                   <div className="flex justify-center gap-10 items-center text-center p-8">
                     
@@ -114,7 +114,7 @@ const ProductShowCase = () => {
                 </div>
                 </div>
                   <figure className="px-3 pt-3">
-                    <img src="https://i.ibb.co/W6FhkvN/3998298-14247.jpg" alt="" className="rounded-xl h-80 w-full" />
+                    <img src="https://iili.io/JAKiOIj.jpg" alt="" className="rounded-xl h-80 w-full" />
                   </figure>
                   <div className="flex justify-center gap-10 items-center text-center p-8">
                     
@@ -137,7 +137,7 @@ const ProductShowCase = () => {
                 </div>
                 </div>
                   <figure className="px-3 pt-3">
-                    <img src="https://i.ibb.co/DwJ3Qjf/9378115-33896.jpg" alt="" className="rounded-xl h-80 w-full" />
+                    <img src="https://iili.io/JAKQCmu.jpg" alt="" className="rounded-xl h-80 w-full" />
                   </figure>
                   <div className="flex justify-center gap-10 items-center text-center p-8">
                     
@@ -160,7 +160,7 @@ const ProductShowCase = () => {
                 </div>
                 </div>
                   <figure className="px-3 pt-3">
-                    <img src="https://i.ibb.co/yfhC423/2869893-6267.jpg" alt="" className="rounded-xl h-80 w-full" />
+                    <img src="https://iili.io/JAKQVrN.jpg" alt="" className="rounded-xl h-80 w-full" />
                   </figure>
                   <div className="flex justify-center gap-10 items-center text-center p-8">
                     
@@ -183,7 +183,7 @@ const ProductShowCase = () => {
                 </div>
                 </div>
                   <figure className="px-3 pt-3">
-                    <img src="https://i.ibb.co/Ybc8Ykh/3097940-454290-PFH47-J-722.jpg" alt="" className="rounded-xl h-80 w-full" />
+                    <img src="https://iili.io/JAKZfGR.jpg" alt="" className="rounded-xl h-80 w-full" />
                   </figure>
                   <div className="flex justify-center gap-10 items-center text-center p-8">
                     
@@ -206,7 +206,7 @@ const ProductShowCase = () => {
                 </div>
                 </div>
                   <figure className="px-3 pt-3">
-                    <img src="https://i.ibb.co/yWFcRp8/3817394-10846.jpg" alt="" className="rounded-xl h-80 w-full" />
+                    <img src="https://iili.io/JAKZ4PR.jpg" alt="" className="rounded-xl h-80 w-full" />
                   </figure>
                   <div className="flex justify-center gap-10 items-center text-center p-8">
                     

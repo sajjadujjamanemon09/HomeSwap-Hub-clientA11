@@ -6,11 +6,11 @@ const Banner = () => {
     return (
         <div>
                     <>
-                    <div className="hero w-full" style={{backgroundImage: 'url(https://i.ibb.co/rpr0qfg/33563459-gradient-background-a-3-08.jpg)'}}>
+                    <div className="hero w-full" style={{backgroundImage: 'url(https://iili.io/JAFGYpj.jpg)'}}>
                     <div className="hero-overlay bg-opacity-30"></div>
 	<div className="w-full flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-evenly">
 		<div className="lg:w-1/2 flex items-center justify- p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-			<img src="https://i.ibb.co/gdWj2FV/Design-tools-amico.png" alt="" className="w-full object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+			<img src="https://iili.io/JAFtH1p.png" alt="" className="w-full object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
 		</div>
 		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:w-1/2 lg:text-left">
 			<h1 className="text-5xl font-bold text-white">A 
